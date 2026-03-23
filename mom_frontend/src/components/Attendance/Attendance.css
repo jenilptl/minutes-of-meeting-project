@@ -1,0 +1,24 @@
+.attendance-card {
+  background-color: var(
+  border: 1px solid var(
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.attendance-card h4 {
+  color: var(
+  margin-bottom: 12px;
+}
+
+.attendance-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-card th,
+.attendance-card td {
+  border: 1px solid var(
+  padding: 8px;
+  text-align: left;
+}
