@@ -6,8 +6,8 @@ A robust and efficient **Minutes of Meeting (MOM) Management System** designed t
 
 To ensure separation of concerns and maintainability, the project is structured into two main independent directories. 
 
-- `frontend/`: The Client-side React application.
-- `backend/`: The Server-side API and database management.
+- `mom_frontend/`: The Client-side React application.
+- `mom_backend/`: The Server-side API and database management.
 
 > **Note:** Do NOT merge these two directories into one. They are meant to operate securely and efficiently apart from one another.
 
@@ -21,7 +21,7 @@ To ensure separation of concerns and maintainability, the project is structured 
 
 ---
 
-## 💻 Frontend (`frontend`)
+## 💻 Frontend (`mom_frontend`)
 
 The frontend of this application is a Single Page Application (SPA) built using React.js. It facilitates the user interface for staff and admins to view, edit, and maintain minutes of meeting and member attendance seamlessly.
 
@@ -34,7 +34,7 @@ The frontend of this application is a Single Page Application (SPA) built using 
 ### Running the Frontend
 1. Navigate to the frontend directory:
    ```bash
-   cd frontend
+   cd mom_frontend
    ```
 2. Install dependencies:
    ```bash
@@ -47,7 +47,7 @@ The frontend of this application is a Single Page Application (SPA) built using 
 
 ---
 
-## ⚙️ Backend (`backend`)
+## ⚙️ Backend (`mom_backend`)
 
 The backend is built using Node.js, Express, and MySQL. It acts as the backbone, handling business logic, authentication, secure JSON responses, and storing user/meeting data securely.
 
@@ -60,14 +60,14 @@ The backend is built using Node.js, Express, and MySQL. It acts as the backbone,
 ### Running the Backend
 1. Navigate to the backend directory:
    ```bash
-   cd backend
+   cd mom_backend
    ```
 2. Install dependencies:
    ```bash
    npm install
    ```
 3. Configure Environment Variables:
-   - Make sure your `.env` file is properly configured in the root of the `backend` directory with your database config and JWT secret.
+   - Make sure your `.env` file is properly configured in the root of the `mom_backend` directory with your database config and JWT secret.
 4. Start the server (Development Mode):
    ```bash
    npm run dev
